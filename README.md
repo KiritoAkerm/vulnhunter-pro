@@ -47,8 +47,9 @@ pip install -r requirements.txt
 # 3. Verify installation
 python vulnhunter.py --version
 
+---
 
-🧪 Quick Start Example
+## 🧪 Quick Start Example
 Run a basic scan against a test target:
 
 python vulnhunter.py -u https://testphp.vulnweb.com
@@ -60,7 +61,7 @@ Expected output:
 [✓] Report saved: reports/scan_results.html
 
 
-🧩 CLI Options
+## 🧩 CLI Options
 Argument	Description	Example
 -u URL	Scan a single target URL	-u https://example.com
 -f targets.txt	Scan multiple targets from file	-f targets.txt
@@ -69,7 +70,7 @@ Argument	Description	Example
 --stealth	Enable stealth scan mode	--stealth
 --language es	Set report language	--language es
 
-📂 Report Structure
+## 📂 Report Structure
 
 vulnhunter-pro/
 ├── reports/
@@ -90,7 +91,7 @@ CUSTOM_RULES = [
 
 You can also extend or replace wordlists in /wordlists.
 
-🔧 Advanced Use Cases
+## 🔧 Advanced Use Cases
 CI/CD pipeline integration (GitHub Actions, GitLab CI)
 
 Docker support
@@ -101,7 +102,7 @@ Scan authenticated areas via session or header injection
 
 Scheduled or incremental scans per project
 
-🧠 AI Capabilities
+## 🧠 AI Capabilities
 Machine learning model to reduce false positives
 
 Context-aware payload generation
@@ -110,7 +111,7 @@ Risk scoring with severity prediction
 
 Exploitation chaining (experimental)
 
-❓ Troubleshooting
+## ❓ Troubleshooting
 Dependency issues:
 
 pip install --upgrade -r requirements.txt
@@ -130,18 +131,18 @@ http://dvwa.local
 
 http://bwapp.local
 
-📜 License
+## 📜 License
 MIT License — Free to use and modify.
 Please use ethically and only on targets you are authorized to scan.
 
-🤝 Contributing
+## 🤝 Contributing
 Pull requests are welcome!
 If you have ideas, features, or fixes to propose, feel free to fork and collaborate.
 
-🌐 Follow the Project
+## 🌐 Follow the Project
 GitHub: VulnHunter Pro
 
 Created by: KiritoAkerm
 
-🚀 Happy Hacking!
+## 🚀 Happy Hacking!
 #CyberSecurity #Python #Pentesting #OWASP #BugBounty #DevSecOps #OpenSource
