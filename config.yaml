@@ -1,0 +1,57 @@
+# VulnHunter Pro Configuration
+scanner:
+  threads: 20
+  timeout: 10
+  delay: 0.1
+  retries: 3
+  max_redirects: 5
+  
+scan_profiles:
+  quick:
+    modules: ['web_basic', 'headers', 'ssl']
+    max_time: 300  # 5 minutos
+  
+  full:
+    modules: ['web_basic', 'sql_injection', 'xss', 'directory_fuzzer', 'headers', 'ssl', 'vulnerability_scan']
+    max_time: 3600  # 1 hora
+  
+  stealth:
+    modules: ['web_basic', 'headers', 'ssl']
+    delay: 2.0
+    random_agents: true
+    max_time: 1800  # 30 minutos
+
+ai_engine:
+  enabled: true
+  model: "gpt-3.5-turbo"
+  max_tokens: 1000
+  temperature: 0.3
+
+reporting:
+  default_format: "html"
+  include_executive_summary: true
+  include_technical_details: true
+  languages: ['en', 'es']
+
+business_context:
+  asset_criticality: 1.0
+  data_sensitivity: 1.0
+  external_exposure: 1.0
+  compliance_impact: 1.0
+
+webhooks:
+  slack:
+    enabled: false
+    webhook_url: ""
+  
+  teams:
+    enabled: false
+    webhook_url: ""
+  
+  email:
+    enabled: false
+    smtp_server: ""
+    smtp_port: 587
+    username: ""
+    password: ""
+    recipients: []

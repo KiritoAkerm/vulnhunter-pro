@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VulnHunter Pro - Scan Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; }
+        .stats { display: flex; justify-content: space-around; margin: 20px 0; }
+        .stat-box { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-align: center; }
+        .vulnerability { background: white; margin: 10px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .severity-high { border-left: 5px solid #dc3545; }
+        .severity-medium { border-left: 5px solid #ffc107; }
+        .severity-low { border-left: 5px solid #17a2b8; }
+        .severity-info { border-left: 5px solid #28a745; }
+        .evidence { background: #f8f9fa; padding: 10px; border-radius: 4px; font-family: monospace; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 VulnHunter Pro - Vulnerability Report</h1>
+        <p>Target: https://httpbin.org</p>
+        <p>Generated: 2025-07-25 08:37:04</p>
+    </div>
+    
+    <div class="stats">
+        <div class="stat-box">
+            <h3>8</h3>
+            <p>Vulnerabilities Found</p>
+        </div>
+        <div class="stat-box">
+            <h3>18</h3>
+            <p>Requests Made</p>
+        </div>
+        <div class="stat-box">
+            <h3>97.27s</h3>
+            <p>Scan Duration</p>
+        </div>
+    </div>
+    
+    <h2>🔍 Vulnerability Details</h2>
+    
+    <div class="vulnerability severity-medium">
+        <h3>Missing Security Header: Strict-Transport-Security</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Security Headers</p>
+        <p><strong>Severity:</strong> <span style="color: #ffc107;">MEDIUM</span></p>
+        <div class="evidence">HSTS header missing - site vulnerable to protocol downgrade attacks</div>
+    </div>
+    
+    <div class="vulnerability severity-medium">
+        <h3>Missing Security Header: X-Frame-Options</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Security Headers</p>
+        <p><strong>Severity:</strong> <span style="color: #ffc107;">MEDIUM</span></p>
+        <div class="evidence">X-Frame-Options missing - site vulnerable to clickjacking attacks</div>
+    </div>
+    
+    <div class="vulnerability severity-low">
+        <h3>Missing Security Header: X-Content-Type-Options</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Security Headers</p>
+        <p><strong>Severity:</strong> <span style="color: #17a2b8;">LOW</span></p>
+        <div class="evidence">X-Content-Type-Options missing - MIME sniffing attacks possible</div>
+    </div>
+    
+    <div class="vulnerability severity-medium">
+        <h3>Missing Security Header: Content-Security-Policy</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Security Headers</p>
+        <p><strong>Severity:</strong> <span style="color: #ffc107;">MEDIUM</span></p>
+        <div class="evidence">CSP header missing - XSS and injection attacks easier</div>
+    </div>
+    
+    <div class="vulnerability severity-low">
+        <h3>Missing Security Header: X-XSS-Protection</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Security Headers</p>
+        <p><strong>Severity:</strong> <span style="color: #17a2b8;">LOW</span></p>
+        <div class="evidence">X-XSS-Protection missing - XSS protection disabled</div>
+    </div>
+    
+    <div class="vulnerability severity-low">
+        <h3>Missing Security Header: Referrer-Policy</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Security Headers</p>
+        <p><strong>Severity:</strong> <span style="color: #17a2b8;">LOW</span></p>
+        <div class="evidence">Referrer-Policy missing - information leakage possible</div>
+    </div>
+    
+    <div class="vulnerability severity-low">
+        <h3>Server Information Disclosure</h3>
+        <p><strong>URL:</strong> https://httpbin.org</p>
+        <p><strong>Category:</strong> Information Disclosure</p>
+        <p><strong>Severity:</strong> <span style="color: #17a2b8;">LOW</span></p>
+        <div class="evidence">Server header reveals: gunicorn/19.9.0</div>
+    </div>
+    
+    <div class="vulnerability severity-low">
+        <h3>Exposed Sensitive Path</h3>
+        <p><strong>URL:</strong> https://httpbin.org/robots.txt</p>
+        <p><strong>Category:</strong> Information Disclosure</p>
+        <p><strong>Severity:</strong> <span style="color: #17a2b8;">LOW</span></p>
+        <div class="evidence">Accessible path: /robots.txt (Status: 200, Size: 30 bytes)</div>
+    </div>
+    
+</body>
+</html>
+        

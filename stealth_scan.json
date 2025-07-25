@@ -1,0 +1,57 @@
+{
+  "scan_info": {
+    "target": "https://example.com",
+    "timestamp": "2025-07-25T08:38:30.731251",
+    "scanner": "VulnHunter Pro",
+    "version": "1.0"
+  },
+  "scan_stats": {
+    "start_time": 1753447109.7692494,
+    "end_time": 1753447110.725857,
+    "requests_made": 2
+  },
+  "vulnerabilities": [
+    {
+      "type": "Missing Security Header: Strict-Transport-Security",
+      "severity": "MEDIUM",
+      "url": "https://example.com",
+      "evidence": "HSTS header missing - site vulnerable to protocol downgrade attacks",
+      "category": "Security Headers"
+    },
+    {
+      "type": "Missing Security Header: X-Frame-Options",
+      "severity": "MEDIUM",
+      "url": "https://example.com",
+      "evidence": "X-Frame-Options missing - site vulnerable to clickjacking attacks",
+      "category": "Security Headers"
+    },
+    {
+      "type": "Missing Security Header: X-Content-Type-Options",
+      "severity": "LOW",
+      "url": "https://example.com",
+      "evidence": "X-Content-Type-Options missing - MIME sniffing attacks possible",
+      "category": "Security Headers"
+    },
+    {
+      "type": "Missing Security Header: Content-Security-Policy",
+      "severity": "MEDIUM",
+      "url": "https://example.com",
+      "evidence": "CSP header missing - XSS and injection attacks easier",
+      "category": "Security Headers"
+    },
+    {
+      "type": "Missing Security Header: X-XSS-Protection",
+      "severity": "LOW",
+      "url": "https://example.com",
+      "evidence": "X-XSS-Protection missing - XSS protection disabled",
+      "category": "Security Headers"
+    },
+    {
+      "type": "Missing Security Header: Referrer-Policy",
+      "severity": "LOW",
+      "url": "https://example.com",
+      "evidence": "Referrer-Policy missing - information leakage possible",
+      "category": "Security Headers"
+    }
+  ]
+}
