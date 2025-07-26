@@ -50,9 +50,8 @@ python vulnhunter.py --version
 
 ---
 
----
-
 ## 🧪 Quick Start Example
+---
 Run a basic scan against a test target:
 
 python vulnhunter.py -u https://testphp.vulnweb.com
