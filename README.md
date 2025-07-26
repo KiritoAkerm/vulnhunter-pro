@@ -36,7 +36,6 @@ Reports are generated in visual (HTML) and structured (JSON) formats, with actio
 
 ## ⚙️ Installation
 
----
 
 ### 1. Clone the repository
 git clone https://github.com/KiritoAkerm/vulnhunter-pro.git
@@ -51,7 +50,7 @@ python vulnhunter.py --version
 ---
 
 ## 🧪 Quick Start Example
----
+
 Run a basic scan against a test target:
 
 python vulnhunter.py -u https://testphp.vulnweb.com
@@ -63,9 +62,8 @@ Expected output:
 [✓] Report saved: reports/scan_results.html
 ---
 
----
-
 ## 🧩 CLI Options
+
 Argument	Description	Example
 -u URL	Scan a single target URL	-u https://example.com
 -f targets.txt	Scan multiple targets from file	-f targets.txt
@@ -73,8 +71,6 @@ Argument	Description	Example
 --verbose	Enable verbose output	--verbose
 --stealth	Enable stealth scan mode	--stealth
 --language es	Set report language	--language es
-
----
 
 ---
 
@@ -101,9 +97,8 @@ You can also extend or replace wordlists in /wordlists.
 
 ---
 
----
-
 ## 🔧 Advanced Use Cases
+
 CI/CD pipeline integration (GitHub Actions, GitLab CI)
 
 Docker support
@@ -116,9 +111,8 @@ Scheduled or incremental scans per project
 
 ---
 
----
-
 ## 🧠 AI Capabilities
+
 Machine learning model to reduce false positives
 
 Context-aware payload generation
@@ -128,10 +122,8 @@ Risk scoring with severity prediction
 Exploitation chaining (experimental)
 
 ---
-
----
-
 ## ❓ Troubleshooting
+
 Dependency issues:
 
 pip install --upgrade -r requirements.txt
@@ -153,30 +145,25 @@ http://bwapp.local
 
 ---
 
----
-
 ## 📜 License
+
 MIT License — Free to use and modify.
 Please use ethically and only on targets you are authorized to scan.
 
 ---
 
----
-
 ## 🤝 Contributing
+
 Pull requests are welcome!
 If you have ideas, features, or fixes to propose, feel free to fork and collaborate.
 
 ---
 
----
-
 ## 🌐 Follow the Project
+
 GitHub: VulnHunter Pro
 
 Created by: KiritoAkerm
-
----
 
 ---
 
