@@ -36,7 +36,8 @@ Reports are generated in visual (HTML) and structured (JSON) formats, with actio
 
 ## ⚙️ Installation
 
-``bash
+---
+
 ### 1. Clone the repository
 git clone https://github.com/KiritoAkerm/vulnhunter-pro.git
 cd vulnhunter-pro
@@ -49,7 +50,8 @@ python vulnhunter.py --version
 
 ---
 
-``bash
+---
+
 ## 🧪 Quick Start Example
 Run a basic scan against a test target:
 
@@ -62,7 +64,7 @@ Expected output:
 [✓] Report saved: reports/scan_results.html
 ---
 
-``bash
+---
 
 ## 🧩 CLI Options
 Argument	Description	Example
@@ -75,7 +77,7 @@ Argument	Description	Example
 
 ---
 
-``bash
+---
 
 ## 📂 Report Structure
 
@@ -100,7 +102,7 @@ You can also extend or replace wordlists in /wordlists.
 
 ---
 
-``bash
+---
 
 ## 🔧 Advanced Use Cases
 CI/CD pipeline integration (GitHub Actions, GitLab CI)
@@ -115,7 +117,7 @@ Scheduled or incremental scans per project
 
 ---
 
-``bash
+---
 
 ## 🧠 AI Capabilities
 Machine learning model to reduce false positives
@@ -128,7 +130,7 @@ Exploitation chaining (experimental)
 
 ---
 
-``bash
+---
 
 ## ❓ Troubleshooting
 Dependency issues:
@@ -152,7 +154,7 @@ http://bwapp.local
 
 ---
 
-``bash
+---
 
 ## 📜 License
 MIT License — Free to use and modify.
@@ -160,7 +162,7 @@ Please use ethically and only on targets you are authorized to scan.
 
 ---
 
-``bash
+---
 
 ## 🤝 Contributing
 Pull requests are welcome!
@@ -168,7 +170,7 @@ If you have ideas, features, or fixes to propose, feel free to fork and collabor
 
 ---
 
-``bash
+---
 
 ## 🌐 Follow the Project
 GitHub: VulnHunter Pro
@@ -177,7 +179,7 @@ Created by: KiritoAkerm
 
 ---
 
-``bash
+---
 
 ## 🚀 Happy Hacking!
 #CyberSecurity #Python #Pentesting #OWASP #BugBounty #DevSecOps #OpenSource
