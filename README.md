@@ -60,6 +60,7 @@ Expected output:
 [+] Scanning: https://testphp.vulnweb.com
 [!] Vulnerability found: XSS in /search.php
 [✓] Report saved: reports/scan_results.html
+
 ---
 
 ## 🧩 CLI Options
