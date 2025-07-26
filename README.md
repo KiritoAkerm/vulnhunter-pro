@@ -49,6 +49,7 @@ python vulnhunter.py --version
 
 ---
 
+```bash
 ## 🧪 Quick Start Example
 Run a basic scan against a test target:
 
@@ -59,7 +60,9 @@ Expected output:
 [+] Scanning: https://testphp.vulnweb.com
 [!] Vulnerability found: XSS in /search.php
 [✓] Report saved: reports/scan_results.html
+---
 
+```bash
 
 ## 🧩 CLI Options
 Argument	Description	Example
@@ -70,6 +73,9 @@ Argument	Description	Example
 --stealth	Enable stealth scan mode	--stealth
 --language es	Set report language	--language es
 
+---
+
+```bash
 ## 📂 Report Structure
 
 vulnhunter-pro/
@@ -102,6 +108,10 @@ Scan authenticated areas via session or header injection
 
 Scheduled or incremental scans per project
 
+---
+
+```bash
+
 ## 🧠 AI Capabilities
 Machine learning model to reduce false positives
 
@@ -110,6 +120,10 @@ Context-aware payload generation
 Risk scoring with severity prediction
 
 Exploitation chaining (experimental)
+
+---
+
+```bash
 
 ## ❓ Troubleshooting
 Dependency issues:
@@ -131,18 +145,34 @@ http://dvwa.local
 
 http://bwapp.local
 
+---
+
+```bash
+
 ## 📜 License
 MIT License — Free to use and modify.
 Please use ethically and only on targets you are authorized to scan.
+
+---
+
+```bash
 
 ## 🤝 Contributing
 Pull requests are welcome!
 If you have ideas, features, or fixes to propose, feel free to fork and collaborate.
 
+---
+
+```bash
+
 ## 🌐 Follow the Project
 GitHub: VulnHunter Pro
 
 Created by: KiritoAkerm
+
+---
+
+```bash
 
 ## 🚀 Happy Hacking!
 #CyberSecurity #Python #Pentesting #OWASP #BugBounty #DevSecOps #OpenSource
