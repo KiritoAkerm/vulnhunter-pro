@@ -44,6 +44,7 @@ cd vulnhunter-pro
 
 ### 2. Install required dependencies
 pip install -r requirements.txt
+
 (Important)
 Due to PEP 668 (externally managed python environments), Kali Linux and other pentesting distributions required the use of a python virtual environment 
  
