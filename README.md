@@ -41,8 +41,17 @@ Reports are generated in visual (HTML) and structured (JSON) formats, with actio
 git clone https://github.com/KiritoAkerm/vulnhunter-pro.git
 cd vulnhunter-pro
 
+
 ### 2. Install required dependencies
 pip install -r requirements.txt
+(Important)
+Due to PEP 668 (externally managed python environments), Kali Linux and other pentesting distributions required the use of a python virtual environment 
+
+```bash 
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
 
 ### 3. Verify installation
 python vulnhunter.py --version
