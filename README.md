@@ -70,6 +70,8 @@ Expected output:
 [!] Vulnerability found: XSS in /search.php
 [✓] Report saved: reports/scan_results.html
 
+Any doubts please check python vulnhunter.py -h
+
 ---
 
 ## 🧩 CLI Options
